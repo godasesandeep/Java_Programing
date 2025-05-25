@@ -1,3 +1,16 @@
+class Demo extends Thread
+{
+    public void run()
+    {
+        int i = 0;
+        String name = Thread.currentThread().getName();
+        for(i = 0; i <= 1000; i++)
+        {
+            System.out.println("Running thread : "+name+" with value : "+i);
+        }
+    }
+}
+
 class Multi3
 {
     public static void main(String A[])
@@ -13,17 +26,3 @@ class Multi3
         obj2.start();
     }
 }
-
-class Demo extends Thread
-{
-    public void run()
-    {
-        int i = 0;
-        String name = Thread.currentThread().getName();
-        for(i = 0; i <= 100; i++)
-        {
-            System.out.println("Running thread : "+name+" with value : "+i);
-        }
-    }
-}
-

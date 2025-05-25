@@ -1,24 +1,21 @@
-
 class ArrayDemo
 {
-
-    public static void main(String arg[])
+    public static void main(String Arg[])
     {
-        int arr[] = new int[5];
+        int Arr[] = new int[5];
 
-        arr[0]=10;
-        arr[1]=20;
-        arr[2]=30;
-        arr[3]=40;
-        arr[4]=50;
+        Arr[0] = 10;
+        Arr[1] = 20;
+        Arr[2] = 30;
+        Arr[3] = 40;
+        Arr[4] = 50;
+        
+        System.out.println("Number of elements in array are : "+Arr.length);
 
-        System.out.println("Number of element in array : "+arr.length);
-
-        System.out.println(arr[0]);
-        System.out.println(arr[1]);
-        System.out.println(arr[2]);
-        System.out.println(arr[3]);
-        System.out.println(arr[4]);
+        System.out.println(Arr[0]);
+        System.out.println(Arr[1]);
+        System.out.println(Arr[2]);
+        System.out.println(Arr[3]);
+        System.out.println(Arr[4]);                        
     }
-
 }

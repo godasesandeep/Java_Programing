@@ -1,53 +1,50 @@
-class Hierarchal
-{
-    public static void main(String arg[])
-    {
-        DerivedX dobj =new DerivedX();
-        dobj.Fun();
-        dobj.Sun();
-
-        Derived dobj2=new Derived();
-        dobj2.Fun();
-        dobj2.Gun();
-    }
-}
 
 class Base
 {
     public int A,B;
     public Base()
     {
-        System.out.println("Base Constructor");
+        System.out.println("Base constructor");
     }
-
-    void Fun()
+    public void Fun()
     {
-        System.out.println("Base Fun");
+        System.out.println("Inside Base fun");
     }
 }
 
-class Derived extends Base
+class Derived extends Base          
 {
     public int X,Y;
     public Derived()
     {
         System.out.println("Derived Constructor");
     }
-    void Gun()
+    public void Gun()
     {
-        System.out.println("Inside Derived Gun");
+        System.out.println("Inside Derived gun");
     }
 }
 
 class DerivedX extends Base
 {
-    public int I,J;
+    public int P,Q;
     public DerivedX()
     {
         System.out.println("DerivedX Constructor");
     }
-    void Sun()
+    public void Sun()
     {
         System.out.println("Inside DerivedX Sun");
     }
+}
+
+class Hierarchal
+{
+    public static void main(String A[])
+    {
+        Derived dobj1 = new Derived();
+
+        DerivedX dobj2 = new DerivedX();
+        
+    }   
 }

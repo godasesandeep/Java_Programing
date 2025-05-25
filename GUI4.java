@@ -1,33 +1,29 @@
 import java.awt.*;
 import java.awt.event.*;
 
-class GUI3
+class MarvellousFrame
 {
-    public static void main(String a[])
-    {
-      MFrame mobj =new MFrame("PPA50");
-    }
-}
-
-class MFrame
-{
-    public MFrame(String title)
+    public MarvellousFrame(String title)
     {
         Frame fobj = new Frame(title);
         fobj.setSize(600,600);
         fobj.setVisible(true);
-        fobj.addWindowListener(new MListener());
+        fobj.addWindowListener(new MarvellousListener());
     }
 }
 
-class MListener extends WindowAdapter
+class MarvellousListener extends WindowAdapter
 {
-
-  public void windowClosing(WindowEvent obj)
-  {
-    System.out.println("Ala re");
-    System.exit(0);
-  }
+    public void windowClosing(WindowEvent obj)
+    {
+        System.exit(0);
+    }
 }
 
-
+class GUI4
+{
+    public static void main(String A[])
+    {
+        MarvellousFrame mobj = new MarvellousFrame("Marvellous");
+    }
+}

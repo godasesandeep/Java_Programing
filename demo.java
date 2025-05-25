@@ -1,6 +1,5 @@
 
-
-class demo
+class Demo
 {
     public static void main(String Arg[])
     {
@@ -8,6 +7,5 @@ class demo
     }
 }
 
-
-// javac demo.java 
-//java demo
+// javac Demo.java
+// java Demo

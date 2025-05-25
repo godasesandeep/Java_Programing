@@ -1,37 +1,34 @@
-
-class Multi4
+class Demo extends Thread
 {
-    public static void main(String a[])
+    public void run()
     {
-        System.out.println("Current Tread is : "+Thread.currentThread().getName());
-        Practice obj1 = new Practice();
-        Practice obj2 = new Practice();
-
-        obj1.setName("Ashwini");
-        obj2.setName("Sandy");
-        obj1.start();
-        obj2.start();
+        try
+        {
+            int i = 0;
+            String name = Thread.currentThread().getName();
+            for(i = 0; i <= 10; i++)
+            {
+                System.out.println("Running thread : "+name+" with value : "+i);
+                Thread.sleep(5000);
+            }
+        }
+        catch(Exception obj)
+        {}
     }
 }
 
-class Practice extends Thread
+class Multi4
 {
-    public void run()
-            {
-                try{
-                String name = Thread.currentThread().getName();
-                int i=0;
-                for(i=0;i<10;i++)
-                {
-                    System.out.println("Current Running Tread : "+name+ "  With value "+i);
-                    Thread.sleep(2000);
-                }
-                }
-                catch(Exception obj)
-                {
+    public static void main(String A[])
+    {
+        System.out.println("Current thread is : "+Thread.currentThread().getName());
+        Demo obj1 = new Demo();
+        Demo obj2 = new Demo();
 
-                }
-            }
-    
-    
+        obj1.setName("PPA");
+        obj2.setName("LB");
+        
+        obj1.start();
+        obj2.start();
+    }
 }

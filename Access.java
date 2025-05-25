@@ -4,8 +4,7 @@ class Demo
     public int A;
     private int B;
     protected int C;
-    int D;              //Default Access Specifier
-
+    int D;                  // default access specifier
 }
 
 class Access

@@ -1,50 +1,23 @@
 class Multi
 {
-    public static void main(String arg[])
+    public static void main(String Arg[])
     {
-        DerivedX dobj =new DerivedX();
-        dobj.Fun();
-        dobj.Gun();
-        dobj.Sun();
-    }
-}
+        int Arr[][] = new int[3][4];
 
-class Base
-{
-    public int A,B;
-    public Base()
-    {
-        System.out.println("Base Constructor");
-    }
+        Arr[0][0] = 10;
+        Arr[0][1] = 11;
+        Arr[0][2] = 12;
+        Arr[0][3] = 13;
 
-    void Fun()
-    {
-        System.out.println("Base Fun");
-    }
-}
-
-class Derived extends Base
-{
-    public int X,Y;
-    public Derived()
-    {
-        System.out.println("Derived Constructor");
-    }
-    void Gun()
-    {
-        System.out.println("Inside Derived Gun");
-    }
-}
-
-class DerivedX extends Derived
-{
-    public int I,J;
-    public DerivedX()
-    {
-        System.out.println("DerivedX Constructor");
-    }
-    void Sun()
-    {
-        System.out.println("Inside DerivedX Sun");
+        Arr[1][0] = 14;
+        Arr[1][1] = 15;
+        Arr[1][2] = 16;
+        Arr[1][3] = 17;
+        
+        Arr[2][0] = 18;
+        Arr[2][1] = 19;
+        Arr[2][2] = 20;
+        Arr[2][3] = 21;
+        
     }
 }

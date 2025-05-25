@@ -1,36 +1,36 @@
-class Single
-{
-    public static void main(String arg[])
-    {
-        Derived dobj =new Derived();
-        dobj.Fun();
-        dobj.Gun();
-    }
-}
 
 class Base
 {
     public int A,B;
     public Base()
     {
-        System.out.println("Base Constructor");
+        System.out.println("Base constructor");
     }
-
-    void Fun()
+    public void Fun()
     {
-        System.out.println("Base Fun");
+        System.out.println("Inside Base fun");
     }
 }
 
-class Derived extends Base
+class Derived extends Base          
 {
     public int X,Y;
     public Derived()
     {
         System.out.println("Derived Constructor");
     }
-    void Gun()
+    public void Gun()
     {
-        System.out.println("Inside Derived Gun");
+        System.out.println("Inside Derived gun");
+    }
+}
+
+class Single
+{
+    public static void main(String A[])
+    {
+        Derived dobj = new Derived();
+        dobj.Fun();
+        dobj.Gun();
     }
 }
